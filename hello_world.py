@@ -22,10 +22,20 @@ title_method = last_name.title()
 
 print(upper_case)
 
-# 2-5 famous quotes
+# 2-5 & 2-6 famous quotes
 
 author_name = "albert einstein"
 quote = '"You can’t blame gravity for falling in love."'
 author_and_quote = f"{author_name.title()} once said {quote}"
 
 print(author_and_quote)
+
+# 2-7 stripping names
+
+persons_name = " diana "
+persons_name = persons_name.lstrip()
+persons_name = persons_name.rstrip()
+# removes whitespace from each side (left and right)
+persons_name = persons_name.strip()
+
+print("\nDiana")
