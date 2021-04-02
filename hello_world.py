@@ -23,3 +23,9 @@ title_method = last_name.title()
 print(upper_case)
 
 # 2-5 famous quotes
+
+author_name = "albert einstein"
+quote = '"You can’t blame gravity for falling in love."'
+author_and_quote = f"{author_name.title()} once said {quote}"
+
+print(author_and_quote)
