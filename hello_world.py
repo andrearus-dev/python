@@ -1,4 +1,4 @@
-# variables - like a label for a value 
+# variables - like a label for a value
 
 message = "Hello Python World"
 print(message)
@@ -6,7 +6,8 @@ print(message)
 message = "Hello python crash course world"
 print(message)
 
-#strings 
+# strings names_cases.py
 
-
- 
+first_name = "sarah"
+message = f"Hello {first_name.title()}, would you like to learn some Python today?"
+print(message)
