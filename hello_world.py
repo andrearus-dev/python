@@ -52,3 +52,13 @@ print(16/2)
 favourite_number = 8
 message = f"My favourite number is {favourite_number}"
 print(message)
+
+# Chapter 3 introduction lists
+# 3-1 storing names of friends in a list
+
+names = ['sarah', 'glenn', 'vikki', 'marnee', 'jess']
+print(names[0].title())
+print(names[1].title())
+print(names[2].title())
+print(names[3].title())
+print(names[-1].title())  # using -1 instead of 4 to get the last value
