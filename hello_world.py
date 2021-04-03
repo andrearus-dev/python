@@ -62,3 +62,9 @@ print(names[1].title())
 print(names[2].title())
 print(names[3].title())
 print(names[-1].title())  # using -1 instead of 4 to get the last value
+
+# 3-2 greetings
+
+message = f"You are my dearest friend {names[0].title()}, and I love you very much"
+
+print(message)
