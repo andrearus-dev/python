@@ -39,3 +39,7 @@ persons_name = persons_name.rstrip()
 persons_name = persons_name.strip()
 
 print("\nDiana")
+
+# 2-8 numbers
+
+print(5+3)
