@@ -6,14 +6,14 @@ print(message)
 message = "Hello python crash course world"
 print(message)
 
-# strings
+# strings - using f-strings to put a variable into a string
 # 2-3 personal message
 
 first_name = "sarah"
 message = f"Hello {first_name.title()}, would you like to learn some Python today?"
 print(message)
 
-# 2-4 name cases
+# 2-4 name cases - using methods change letter
 
 last_name = "russell"
 lower_case = last_name.lower()
@@ -22,7 +22,7 @@ title_method = last_name.title()
 
 print(upper_case)
 
-# 2-5 & 2-6 famous quotes
+# 2-5 & 2-6 famous quotes - having quotation marks in a string
 
 author_name = "albert einstein"
 quote = '"You can’t blame gravity for falling in love."'
@@ -30,7 +30,7 @@ author_and_quote = f"{author_name.title()} once said {quote}"
 
 print(author_and_quote)
 
-# 2-7 stripping names
+# 2-7 stripping names - using strip method to remove whitespace in a string
 
 persons_name = " diana "
 persons_name = persons_name.lstrip()
@@ -40,14 +40,14 @@ persons_name = persons_name.strip()
 
 print("\nDiana")
 
-# 2-8 numbers
+# 2-8 numbers - using math operators to give the same answer
 
 print(5+3)
 print(10-2)
 print(4*2)
 print(16/2)
 
-# 2-9
+# 2-9 - assigning a variable to a number, then putting that number in an f-string with a message
 
 favourite_number = 8
 message = f"My favourite number is {favourite_number}"
