@@ -63,8 +63,18 @@ print(names[2].title())
 print(names[3].title())
 print(names[-1].title())  # using -1 instead of 4 to get the last value
 
-# 3-2 greetings
+# 3-2 greetings - message stays the same but the name of person changes
 
 message = f"You are my dearest friend {names[0].title()}, and I love you very much"
 
 print(message)
+
+# 3-3 my own list
+
+transportation = ['car', 'bike', 'motorcycle']
+
+first_message = f"I would like to pass my driving test, so I could buy a {transportation[0]}"
+second_message = f"but for now I will have to ride my {transportation[1]}."
+third_message = f"Some day I will upgrade to a {transportation[-1]}."
+
+print(first_message, second_message, third_message)
