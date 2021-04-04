@@ -111,3 +111,9 @@ print(animals)
 
 true_or_false = 'howdy' in ['hello', 'alright', 'howdy', 'howyah']
 print(true_or_false)
+
+
+# list function - can convert value to list
+
+list_of_letters = list('comical')
+print(list_of_letters)
