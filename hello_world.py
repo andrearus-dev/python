@@ -81,10 +81,11 @@ print(first_message, second_message, third_message)
 
 
 # input, len, str and int functions
+# i commeneted out lines  of code where the input function was
 
 print('What is your name?')
 #myName = input()
-print('Nice to meet you ' + myName)
+#print('Nice to meet you ' + myName)
 print('The length of your name is:')
 # print(len(myName))  # length of name
 
@@ -99,3 +100,6 @@ animals = ['dog', 'cat', 'tiger', 'lion', 'bear']
 
 # slicing - starts at value 1, goes up to 4 but does not include 4
 print(animals[1:4])
+
+animals[1:3] = ['panther', 'zebra']
+print(animals)   # can aso replace values with slicing
