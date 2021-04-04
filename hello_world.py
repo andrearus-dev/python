@@ -78,3 +78,16 @@ second_message = f"but for now I will have to ride my {transportation[1]}."
 third_message = f"Some day I will upgrade to a {transportation[-1]}."
 
 print(first_message, second_message, third_message)
+
+
+# testing
+
+print('What is your name?')
+myName = input()
+print('Nice to meet you ' + myName)
+print('The length of your name is:')
+print(len(myName))  # length of name
+
+print('How old are you?')
+age = input()
+print("Cute! That's close to being ancient")
