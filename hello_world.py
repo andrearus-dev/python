@@ -80,14 +80,22 @@ third_message = f"Some day I will upgrade to a {transportation[-1]}."
 print(first_message, second_message, third_message)
 
 
-# testing
+# input, len, str and int functions
 
 print('What is your name?')
-myName = input()
+#myName = input()
 print('Nice to meet you ' + myName)
 print('The length of your name is:')
-print(len(myName))  # length of name
+# print(len(myName))  # length of name
 
 print('How old are you?')
-age = input()
-print('You will be ' + str(int(age) + 1) + ' in a year.')
+#age = input()
+# converting data types with str function
+#print('You will be ' + str(int(age) + 1) + ' in a year.')
+
+# Lists - slicing
+
+animals = ['dog', 'cat', 'tiger', 'lion', 'bear']
+
+# slicing - starts at value 1, goes up to 4 but does not include 4
+print(animals[1:4])
