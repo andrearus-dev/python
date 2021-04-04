@@ -98,11 +98,16 @@ print('How old are you?')
 
 animals = ['dog', 'cat', 'tiger', 'lion', 'bear']
 
-# slicing - starts at value 1, goes up to 4 but does not include 4
+# slicing - starts at value 1, goes up to 4 but does not include 4 - slicing has two indexes
 print(animals[1:4])
 
 animals[1:3] = ['panther', 'zebra']
 print(animals)   # can aso replace values with slicing
 
-del animals[1]
+del animals[1]  # delete values
 print(animals)
+
+# in and not in operator - determines if value is or isn't in a list
+
+true_or_false = 'howdy' in ['hello', 'alright', 'howdy', 'howyah']
+print(true_or_false)
