@@ -103,3 +103,6 @@ print(animals[1:4])
 
 animals[1:3] = ['panther', 'zebra']
 print(animals)   # can aso replace values with slicing
+
+del animals[1]
+print(animals)
