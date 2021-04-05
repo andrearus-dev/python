@@ -129,6 +129,7 @@ print("We have " + str(widgets) + " in stock")
 # constructing data types aka building lists
 
 employees = ["Anna", "Bella", "Tom"]
+employees.append("Lisa")
 
 for employee in employees:
     print(employee)     # display code to show content of list
