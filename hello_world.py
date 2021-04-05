@@ -125,3 +125,10 @@ widgets = 5
 # to concatenate string and variable, use a comma
 print("The price of the widget is", price)
 print("We have " + str(widgets) + " in stock")
+
+# constructing data types aka building lists
+
+employees = ["Anna", "Bella", "Tom"]
+
+for employee in employees:
+    print(employee)     # display code to show content of list
