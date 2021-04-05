@@ -117,3 +117,11 @@ print(true_or_false)
 
 list_of_letters = list('comical')
 print(list_of_letters)
+
+# TYPE CASTING - converting values
+
+price = 3.95
+widgets = 5
+# to concatenate string and variable, use a comma
+print("The price of the widget is", price)
+print("We have " + str(widgets) + " in stock")
