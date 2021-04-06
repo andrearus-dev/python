@@ -163,3 +163,12 @@ quotes = "Turn could've, would've and should've into can, will, and do"
 print(2500 in sales)
 print("do" in quote)
 print("did" in quote)
+
+# flow control statements are IF and ELSE
+
+girl_name = "Alice"
+
+if girl_name == "Alice":
+    # code is in a block - indentation tells you where block begins and ends
+    print("Hi Alice")
+print("Your name is not Alice?")
