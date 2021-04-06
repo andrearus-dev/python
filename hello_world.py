@@ -133,3 +133,14 @@ employees.append("Lisa")
 
 for employee in employees:
     print(employee)     # display code to show content of list
+
+# logical operators
+
+a = 3
+b = 8
+c = 9
+d = 3
+
+print(a == c and a != b)
+print(a == b or a == d)
+print(not a == c or a != d)
