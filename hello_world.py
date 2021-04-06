@@ -164,7 +164,7 @@ print(2500 in sales)
 print("do" in quote)
 print("did" in quote)
 
-# flow control statements are IF and ELSE
+# flow control -  statements are IF ELSE
 
 girl_name = "Alice"
 
@@ -172,3 +172,16 @@ if girl_name == "Alice":
     # code is in a block - indentation tells you where block begins and ends
     print("Hi Alice")
 print("Your name is not Alice?")
+
+
+# elif
+
+boy_name = "Bob"
+boy_age = 5
+
+if boy_name == "Cynthia":
+    print("You are not Bob.")
+elif boy_age != 5:
+    print("Sorry, no can do, you're not Bob")
+elif boy_age >= 5:
+    print("Welcome Bob")
