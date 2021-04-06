@@ -144,3 +144,10 @@ d = 3
 print(a == c and a != b)
 print(a == b or a == d)
 print(not a == c or a != d)
+
+# arithmetic operators
+
+a = 8
+b = 3
+
+print(a ** b)  # exponent - meaning A raised to the B power - 8 x 8 x 8 = 512
