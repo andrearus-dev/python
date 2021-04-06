@@ -152,3 +152,14 @@ b = 3
 
 print(a ** b)  # exponent - meaning A raised to the B power - 8 x 8 x 8 = 512
 print(a % b)  # modulus, as in remainder: 8 / 3 = 2
+
+# identity operator - do they have the same id?? - is or is not =  keywords
+
+# containment - eg - does this variable contain this content
+
+sales = [300, 3200, 2500, 4000]
+quotes = "Turn could've, would've and should've into can, will, and do"
+
+print(2500 in sales)
+print("do" in quote)
+print("did" in quote)
