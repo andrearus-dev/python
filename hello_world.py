@@ -151,3 +151,4 @@ a = 8
 b = 3
 
 print(a ** b)  # exponent - meaning A raised to the B power - 8 x 8 x 8 = 512
+print(a % b)  # modulus, as in remainder: 8 / 3 = 2
