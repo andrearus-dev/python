@@ -186,9 +186,12 @@ elif boy_age != 5:
 elif boy_age >= 5:
     print("Welcome Bob")
 
-# for loop
+# for loop - more concise
 
 total = 0
 for num in range(101):
     total = total + num
 print(total)
+
+for i in range(5):
+    print("Jimmy Four Times " + str(i))
