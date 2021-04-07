@@ -195,3 +195,6 @@ print(total)
 
 for i in range(5):
     print("Jimmy Four Times " + str(i))
+
+for i in range(12, 18):
+    print('Getting the hang of this yet? ' + str(i))
