@@ -221,3 +221,14 @@ else:
     print('Up and coming customer')
 print('Thank you for your business')
 # this code will run regardless of result outcome because it doesn't belong in the block
+
+monthlySales = 500
+newCustomer = True
+
+if monthlySales >= 1000:
+    print('Premium shopper')
+elif monthlySales >= 600:
+    print('Loyal customer')
+if monthlySales >= 500 and newCustomer:
+    print('Welcome to your new addiction')
+print('Enjoy spending your money')
