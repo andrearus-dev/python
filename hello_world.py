@@ -202,3 +202,15 @@ for i in range(12, 18):  # start and stop argument
 
 for i in range(0, 8, 2):  # STEP ARGUMENT - can increment in two STEPS, or three if you put three at the end
     print('coding is fun' + str(i))
+
+# elif statement and indentation
+
+annualSales = 3000
+if annualSales >= 5000:
+    print('Gold Customer')
+elif annualSales >= 3000:
+    print('Silver Customer')
+elif annualSales >= 1000:
+    print('Bronze Customer')
+# this code will run regardless of result outcome because it doesn't belong in the block
+print('Thank you for your business')
