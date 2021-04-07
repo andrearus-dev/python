@@ -206,10 +206,15 @@ for i in range(0, 8, 2):  # STEP ARGUMENT - can increment in two STEPS, or three
 # elif statement and indentation
 
 annualSales = 3000
+region = 'North'
 if annualSales >= 5000:
     print('Gold Customer')
 elif annualSales >= 3000:
     print('Silver Customer')
+    if region == 'North':
+        print('Send snowboard')
+    else:
+        print('Send baseball bat')
 elif annualSales >= 1000:
     print('Bronze Customer')
 else:
