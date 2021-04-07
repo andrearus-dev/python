@@ -212,5 +212,7 @@ elif annualSales >= 3000:
     print('Silver Customer')
 elif annualSales >= 1000:
     print('Bronze Customer')
-# this code will run regardless of result outcome because it doesn't belong in the block
+else:
+    print('Up and coming customer')
 print('Thank you for your business')
+# this code will run regardless of result outcome because it doesn't belong in the block
