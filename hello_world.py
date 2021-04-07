@@ -185,3 +185,10 @@ elif boy_age != 5:
     print("Sorry, no can do, you're not Bob")
 elif boy_age >= 5:
     print("Welcome Bob")
+
+# for loop
+
+total = 0
+for num in range(101):
+    total = total + num
+print(total)
