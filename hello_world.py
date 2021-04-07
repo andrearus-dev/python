@@ -196,8 +196,9 @@ print(total)
 for i in range(5):
     print("Jimmy Four Times " + str(i))
 
+# RANGE FUNCTION
 for i in range(12, 18):  # start and stop argument
     print('Getting the hang of this yet? ' + str(i))
 
-for i in range(0, 8, 2):  # can increment in two STEPS, or three if you put three at the end
+for i in range(0, 8, 2):  # STEP ARGUMENT - can increment in two STEPS, or three if you put three at the end
     print('coding is fun' + str(i))
