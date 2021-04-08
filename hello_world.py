@@ -233,29 +233,29 @@ if monthlySales >= 500 and newCustomer:
     print('Welcome to your new addiction')
 print('Enjoy spending your money')
 
-# while loop
+# WHILE LOOP - commented out code with the input function so the next chunck of code can run
 
-capitalGuess = input("What is the capital of Latvia? ")
+# capitalGuess = input("What is the capital of Latvia? ")
 numberOfGuesses = 1
 
-while capitalGuess != "Dublin":
-    numberOfGuesses = numberOfGuesses + 1
-    if numberOfGuesses > 3:
-        print("You guessed incorrectly 3 times. Game over.")
-        break
-    capitalGuess = input("Guess again. ")
+# while capitalGuess != "Dublin":
+numberOfGuesses = numberOfGuesses + 1
+if numberOfGuesses > 3:
+    print("You guessed incorrectly 3 times. Game over.")
+    # break
+    # capitalGuess = input("Guess again. ")
 
 if numberOfGuesses <= 3:
     print("You guessed it. Dublin is the capital of Ireland. It took you " +
           str(numberOfGuesses) + " to get that right")
-
+#
 
 # for loop - set to run a certain number of times
 
 initialSalesGoal = 20000
 multiplier = 100
 
-for monthlyGoal in range(1, 12):
+for monthlyGoal in range(1, 5):
     monthlySalesGoal = initialSalesGoal + (monthlyGoal * 100)
     print("Your sales goal for month " +
           str(monthlyGoal) + " is " + str(monthlySalesGoal))
