@@ -248,11 +248,11 @@ print("You guessed it. Dublin is the capital of Ireland. It took you " +
 
 # for loop - set to run a certain number of times
 
-initialSalesGoal = 2000
+initialSalesGoal = 20000
 multiplier = 100
 
-for monthlyGoal in range(12):
+for monthlyGoal in range(1, 12):
     monthlySalesGoal = initialSalesGoal + (monthlyGoal * 100)
     print("Your sales goal for month " +
-          str(monthlyGoal) + "is " + str(monthlySalesGoal))
+          str(monthlyGoal) + " is " + str(monthlySalesGoal))
 print("Good luck with your goals.")
