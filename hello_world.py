@@ -254,13 +254,21 @@ if numberOfGuesses <= 3:
 
 initialSalesGoal = 20000
 multiplier = 100
+offMonth = True
 
 for monthlyGoal in range(1, 5):
-    if monthlyGoal == 3:
+    if monthlyGoal == 3 and offMonth:
         print("No goal for this month")
-        continue  # - skips past what the four loop was going to run
+        continue  # keyword - skips past what the four loop was going to run
 
     monthlySalesGoal = initialSalesGoal + (monthlyGoal * 100)
     print("Your sales goal for month " +
           str(monthlyGoal) + " is " + str(monthlySalesGoal))
+
+    for weeklyGoal in range(1, 5):  # nested loop
+        print("Your goal for week " + str(weeklyGoal) +
+              " is " + str(monthlySalesGoal/4))
+
 print("Good luck with your goals.")
+
+# PASS keyword - placeholder for condition or function
