@@ -242,7 +242,7 @@ numberOfGuesses = 1
 numberOfGuesses = numberOfGuesses + 1
 if numberOfGuesses > 3:
     print("You guessed incorrectly 3 times. Game over.")
-    # break
+    # break - breaks the loop - exit
     # capitalGuess = input("Guess again. ")
 
 if numberOfGuesses <= 3:
@@ -256,9 +256,11 @@ initialSalesGoal = 20000
 multiplier = 100
 
 for monthlyGoal in range(1, 5):
+    if monthlyGoal == 3:
+        print("No goal for this month")
+        continue  # - skips past what the four loop was going to run
+
     monthlySalesGoal = initialSalesGoal + (monthlyGoal * 100)
     print("Your sales goal for month " +
           str(monthlyGoal) + " is " + str(monthlySalesGoal))
 print("Good luck with your goals.")
-
-# break - breaks the loop - exit
