@@ -84,15 +84,15 @@ print(first_message, second_message, third_message)
 # i commeneted out lines  of code where the input function was
 
 print('What is your name?')
-#myName = input()
-#print('Nice to meet you ' + myName)
+# myName = input()
+# print('Nice to meet you ' + myName)
 print('The length of your name is:')
 # print(len(myName))  # length of name
 
 print('How old are you?')
-#age = input()
+# age = input()
 # converting data types with str function
-#print('You will be ' + str(int(age) + 1) + ' in a year.')
+# print('You will be ' + str(int(age) + 1) + ' in a year.')
 
 # Lists - slicing
 
@@ -235,15 +235,19 @@ print('Enjoy spending your money')
 
 # while loop
 
-#capitalGuess = input("What is the capital of Latvia? ")
+capitalGuess = input("What is the capital of Latvia? ")
 numberOfGuesses = 1
 
-# while capitalGuess != "Dublin":
-# numberOfGuesses = numberOfGuesses + 1
-# capitalGuess = input("Guess again. ")
+while capitalGuess != "Dublin":
+    numberOfGuesses = numberOfGuesses + 1
+    if numberOfGuesses > 3:
+        print("You guessed incorrectly 3 times. Game over.")
+        break
+    capitalGuess = input("Guess again. ")
 
-print("You guessed it. Dublin is the capital of Ireland. It took you " +
-      str(numberOfGuesses) + " to get that right")
+if numberOfGuesses <= 3:
+    print("You guessed it. Dublin is the capital of Ireland. It took you " +
+          str(numberOfGuesses) + " to get that right")
 
 
 # for loop - set to run a certain number of times
@@ -256,3 +260,5 @@ for monthlyGoal in range(1, 12):
     print("Your sales goal for month " +
           str(monthlyGoal) + " is " + str(monthlySalesGoal))
 print("Good luck with your goals.")
+
+# break - breaks the loop - exit
