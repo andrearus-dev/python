@@ -235,12 +235,24 @@ print('Enjoy spending your money')
 
 # while loop
 
-capitalGuess = input("What is the capital of Latvia? ")
+#capitalGuess = input("What is the capital of Latvia? ")
 numberOfGuesses = 1
 
-while capitalGuess != "Dublin":
-    numberOfGuesses = numberOfGuesses + 1
-    capitalGuess = input("Guess again. ")
+# while capitalGuess != "Dublin":
+# numberOfGuesses = numberOfGuesses + 1
+# capitalGuess = input("Guess again. ")
 
 print("You guessed it. Dublin is the capital of Ireland. It took you " +
       str(numberOfGuesses) + " to get that right")
+
+
+# for loop - set to run a certain number of times
+
+initialSalesGoal = 2000
+multiplier = 100
+
+for monthlyGoal in range(12):
+    monthlySalesGoal = initialSalesGoal + (monthlyGoal * 100)
+    print("Your sales goal for month " +
+          str(monthlyGoal) + "is " + str(monthlySalesGoal))
+print("Good luck with your goals.")
