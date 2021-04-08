@@ -232,3 +232,15 @@ elif monthlySales >= 600:
 if monthlySales >= 500 and newCustomer:
     print('Welcome to your new addiction')
 print('Enjoy spending your money')
+
+# while loop
+
+capitalGuess = input("What is the capital of Latvia? ")
+numberOfGuesses = 1
+
+while capitalGuess != "Dublin":
+    numberOfGuesses = numberOfGuesses + 1
+    capitalGuess = input("Guess again. ")
+
+print("You guessed it. Dublin is the capital of Ireland. It took you " +
+      str(numberOfGuesses) + " to get that right")
