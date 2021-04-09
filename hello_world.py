@@ -1,5 +1,6 @@
 # variables - like a label for a value
 
+import os  # os library
 import os
 message = "Hello Python World"
 print(message)
@@ -297,7 +298,6 @@ writeFile.close()
 
 # write mode 'w' - starts brand new file
 # append mode 'a' - adds to file
-
 
 if os.path.isfile('log.txt'):  # checks if the file is there
     writeFile = open('log.txt', 'a')
