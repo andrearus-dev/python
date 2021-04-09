@@ -272,3 +272,9 @@ for monthlyGoal in range(1, 5):
 print("Good luck with your goals.")
 
 # PASS keyword - placeholder for condition or function
+
+# conditional compound operators - and, or, not
+
+workFile = open('hello_world.py', 'r')
+workFileContent = workFile.read()
+print(workFileContent)   # how to read a file from that directory
