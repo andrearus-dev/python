@@ -276,5 +276,11 @@ print("Good luck with your goals.")
 # conditional compound operators - and, or, not
 
 workFile = open('hello_world.py', 'r')
-workFileContent = workFile.read()
-print(workFileContent)   # how to read a file from that directory
+# workFileContent = workFile.read() # reads whole file
+
+workFileFirstLine = workFile.readline()  # reads first line
+print(workFileFirstLine)
+
+# print(workFileContent)   # how to read a file from that directory
+
+workFile.close()
