@@ -250,7 +250,7 @@ if numberOfGuesses <= 3:
           str(numberOfGuesses) + " to get that right")
 #
 
-# for loop - set to run a certain number of times
+# --- for loop - set to run a certain number of times
 
 initialSalesGoal = 20000
 multiplier = 100
@@ -275,6 +275,8 @@ print("Good luck with your goals.")
 
 # conditional compound operators - and, or, not
 
+# ---- reading, opening, closing files ----
+
 workFile = open('hello_world.py', 'r')
 # workFileContent = workFile.read() # reads whole file
 
@@ -284,3 +286,10 @@ print(workFileFirstLine)
 # print(workFileContent)   # how to read a file from that directory
 
 workFile.close()
+
+# ----- WRITING a file --------
+
+writeFile = open('log.txt', 'w')
+toLog = input("What do you want to write to the file")
+writeFile.write(toLog)
+writeFile.close()
