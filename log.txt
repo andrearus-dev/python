@@ -1,1 +1,2 @@
- Created a log file, log files are files where youc an track events that have occured within an application
+
+ Adding to the existing log file

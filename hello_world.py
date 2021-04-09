@@ -1,5 +1,6 @@
 # variables - like a label for a value
 
+import os
 message = "Hello Python World"
 print(message)
 
@@ -290,6 +291,19 @@ workFile.close()
 # ----- WRITING a file --------
 
 writeFile = open('log.txt', 'w')
-toLog = input("What do you want to write to the file")
-writeFile.write(toLog)
+#toLog = input("What do you want to write to the file")
+# writeFile.write(toLog)
+writeFile.close()
+
+# write mode 'w' - starts brand new file
+# append mode 'a' - adds to file
+
+
+if os.path.isfile('log.txt'):  # checks if the file is there
+    writeFile = open('log.txt', 'a')
+else:
+    writeFile = open('log.txt', 'w')
+
+toLog = input("What do you want to write to the log?")
+writeFile.write("\n" + toLog)
 writeFile.close()
