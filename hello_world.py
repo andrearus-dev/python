@@ -328,3 +328,10 @@ def plusOne(number):
 
 newNumber = plusOne(5)
 print(newNumber)
+
+# --- none value
+
+# keyword arguments
+
+print('Hello', end='')
+print('World')
