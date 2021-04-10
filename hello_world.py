@@ -312,3 +312,11 @@ else:
 # formatted text for combining number and strings in the same sentence - f" {} "
 
 # function - like mini program in the program - use def statement to define a new function
+
+
+def hello(name):
+    print("Hello " + name)
+
+
+hello("Alice")
+hello("Bob")
