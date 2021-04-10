@@ -279,15 +279,6 @@ print("Good luck with your goals.")
 
 # ---- reading, opening, closing files ----
 
-workFile = open('hello_world.py', 'r')
-# workFileContent = workFile.read() # reads whole file
-
-workFileFirstLine = workFile.readline()  # reads first line
-print(workFileFirstLine)
-
-# print(workFileContent)   # how to read a file from that directory
-
-workFile.close()
 
 # ----- WRITING a file --------
 
@@ -317,7 +308,7 @@ else:
 
 # -- reading input from console and making sure it works
 
-location = ""
-while location != "HQ" and location != "North" and location != "South":
-    location = input("Enter HQ, North or South for a location")
-print(location)
+
+# formatted text for combining number and strings in the same sentence - f" {} "
+
+# function - like mini program in the program - use def statement to define a new function
