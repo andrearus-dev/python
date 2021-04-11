@@ -339,12 +339,12 @@ print('World')
 # FUNCTIONS - routines that we build so we don't have to repeat code
 
 
-def subtotal(orderAmount, salesTax):
+def subtotal(orderAmount, salesTax=0.8):  # you can also assign a value for the second argument
     subtotal = float(orderAmount) * (1 + float(salesTax))
     return subtotal
 
 
-firstOrderTotal = subtotal(300, .08)
+firstOrderTotal = subtotal(300)
 secondOrderTotal = subtotal(400, .06)
 
 thirdOrderAmount = input("What was the order amount? ")
