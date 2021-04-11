@@ -335,3 +335,13 @@ print(newNumber)
 
 print('Hello', end='')
 print('World')
+
+# FUNCTIONS - routines that we build so we don't have to repeat code
+
+
+def subtotal(orderAmount, salesTax):
+    subtotal = float(orderAmt) * (1 + float(salesTax))
+    return subtotal
+
+
+firstOrderTotal = subtotal(300, .08)
