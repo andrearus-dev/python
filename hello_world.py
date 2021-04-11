@@ -349,14 +349,26 @@ def orderMsg():
     return
 
 
-firstOrderTotal = subtotal(300)
-secondOrderTotal = subtotal(400, .06)
+# firstOrderTotal = subtotal(300)
+# secondOrderTotal = subtotal(400, .06)
 
-thirdOrderAmount = input("What was the order amount? ")
-thirdTax = input("Enter your sales tax rate")
-thirdOrderTotal = subtotal(thirdOrderAmount, thirdTax)
+# thirdOrderAmount = input("What was the order amount? ")
+# thirdTax = input("Enter your sales tax rate")
+# thirdOrderTotal = subtotal(thirdOrderAmount, thirdTax)
 
-print("Your subtotal for the first order is %.2f" % firstOrderTotal)
-print("Your subtotal for the second order is %.2f" % secondOrderTotal)
-print("Your subtotal for the third order is %.2f" % thirdOrderTotal)
-orderMsg()
+# print("Your subtotal for the first order is %.2f" % firstOrderTotal)
+# print("Your subtotal for the second order is %.2f" % secondOrderTotal)
+# print("Your subtotal for the third order is %.2f" % thirdOrderTotal)
+# orderMsg()
+
+
+# function
+
+
+def fullName(firstName, lastName):
+    print(f"{lastName}, {firstName}")
+    print("Initials:" + firstName[0] + lastName[0])
+    return
+
+
+fullName("Mighty", "Mouse")
