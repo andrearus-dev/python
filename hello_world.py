@@ -397,8 +397,11 @@ print(div42by(12))
 
 print("How many dogs do you have? ")
 numOfDogs = input()
+try:
 
-if numOfDogs >= 4:
-    print("That is a lot of dogs")
-else:
-    print("You need more dogs in your life")
+    if int(numOfDogs) >= 4:
+        print("That is a lot of dogs.")
+    else:
+        print("You need more dogs in your life.")
+except ValueError:
+    print("You did not enter a number")
