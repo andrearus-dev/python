@@ -385,8 +385,7 @@ fullName("Mighty", "Mouse")
 def div42by(divideBy):
     try:  # try and except statement
         return 42 / divideBy
-    except:
-        ZeroDivisionError()
+    except:  # can use except without specifing the error and will catch all errors
         print("Error: You tried to divide by zero.")
 
 
@@ -395,3 +394,11 @@ print(div42by(6))
 # we get an error. computers don't know how to handle dividing by 0
 print(div42by(0))
 print(div42by(12))
+
+print("How many dogs do you have? ")
+numOfDogs = input()
+
+if numOfDogs >= 4:
+    print("That is a lot of dogs")
+else:
+    print("You need more dogs in your life")
