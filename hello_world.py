@@ -378,3 +378,20 @@ def personInfo():
 fullName("Mighty", "Mouse")
 
 # pass keyword - placeholder for something we plan to define later
+
+
+# Basic exception handling
+
+def div42by(divideBy):
+    try:  # try and except statement
+        return 42 / divideBy
+    except:
+        ZeroDivisionError()
+        print("Error: You tried to divide by zero.")
+
+
+print(div42by(2))
+print(div42by(6))
+# we get an error. computers don't know how to handle dividing by 0
+print(div42by(0))
+print(div42by(12))
