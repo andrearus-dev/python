@@ -411,6 +411,10 @@ a = float(input("Enter a number. "))
 b = float(input("Enter a number you want to divide by"))
 
 try:
-    print(f"{a}/{b}")
+    print(f"The answer is {a/b}.")
 except:
-    print("Error. Did you try to divide the number by 0?")
+    print("Error. Did you try to divide the number by zero? Try again")
+else:
+    print("You used the division successfully")
+finally:
+    print("Thank you for playing.")
