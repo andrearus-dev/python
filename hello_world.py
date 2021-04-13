@@ -413,7 +413,9 @@ b = float(input("Enter a number you want to divide by"))
 try:
     print(f"The answer is {a/b}.")
 except:
-    print("Error. Did you try to divide the number by zero? Try again")
+    if b == 0:
+        raise
+        print("This didn't work")
 else:
     print("You used the division successfully")
 finally:
