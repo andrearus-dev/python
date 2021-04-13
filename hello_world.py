@@ -418,5 +418,17 @@ except:
         print("This didn't work")
 else:
     print("You used the division successfully")
-finally:
+finally:  # final step in successful code
     print("Thank you for playing.")
+
+    # math module
+
+    import math
+
+    pi = math.pi
+    upperBound = math.ceil(44.4)
+    lowerBound = math.floor(44.4)
+
+    print(pi)
+    print(upperBound)
+    print(lowerBound)
