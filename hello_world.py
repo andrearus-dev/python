@@ -1,5 +1,7 @@
 # variables - like a label for a value
 
+import datetime
+import math
 import os  # os library
 import os
 message = "Hello Python World"
@@ -395,40 +397,51 @@ print(div42by(6))
 print(div42by(0))
 print(div42by(12))
 
-print("How many dogs do you have? ")
-numOfDogs = input()
-try:
+# ----------------------------------------
 
-    if int(numOfDogs) >= 4:
-        print("That is a lot of dogs.")
-    else:
-        print("You need more dogs in your life.")
-except ValueError:
-    print("You did not enter a number")
+# print("How many dogs do you have? ")
+# numOfDogs = input()
+# try:
 
+#     if int(numOfDogs) >= 4:
+#         print("That is a lot of dogs.")
+#     else:
+#         print("You need more dogs in your life.")
+# except ValueError:
+#     print("You did not enter a number")
 
-a = float(input("Enter a number. "))
-b = float(input("Enter a number you want to divide by"))
+# -----------------------------------------
 
-try:
-    print(f"The answer is {a/b}.")
-except:
-    if b == 0:
-        raise
-        print("This didn't work")
-else:
-    print("You used the division successfully")
-finally:  # final step in successful code
-    print("Thank you for playing.")
+# a = float(input("Enter a number. "))
+# b = float(input("Enter a number you want to divide by"))
 
-    # math module
+# try:
+#     print(f"The answer is {a/b}.")
+# except:
+#     if b == 0:
+#         raise
+#         print("This didn't work")
+# else:
+#     print("You used the division successfully")
+# finally:  # final step in successful code
+#     print("Thank you for playing.")
 
-    import math
+# math module
 
-    pi = math.pi
-    upperBound = math.ceil(44.4)
-    lowerBound = math.floor(44.4)
+pi = math.pi
+upperBound = math.ceil(44.4)
+lowerBound = math.floor(44.4)
 
-    print(pi)
-    print(upperBound)
-    print(lowerBound)
+print(pi)
+print(upperBound)
+print(lowerBound)
+
+todayWithTime = datetime.datetime.today()
+todayWithoutTime = datetime.date.today()
+print(todayWithTime)
+print(todayWithoutTime)
+
+# formatting function
+print("The current date is ", datetime.datetime.strftime(
+    todayWithoutTime, "%m/%d/%Y"))
+print("The current time is ", datetime.datetime.strftime(todayWithTime, "%H:%M:%S"))
