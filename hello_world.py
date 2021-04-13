@@ -405,3 +405,12 @@ try:
         print("You need more dogs in your life.")
 except ValueError:
     print("You did not enter a number")
+
+
+a = float(input("Enter a number. "))
+b = float(input("Enter a number you want to divide by"))
+
+try:
+    print(f"{a}/{b}")
+except:
+    print("Error. Did you try to divide the number by 0?")
