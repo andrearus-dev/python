@@ -17,3 +17,10 @@ for guessesTaken in range(1, 7):
         print("Your guess is too high.")
     else:
         break  # This condition is for the correct guess
+
+
+if guess == secretNumber:
+    print(
+        f"Good job, {name}. You guessed my number in {guessesTaken} guesses! ")
+else:
+    print(f"The number I was thinking of was {secretNumber}")
