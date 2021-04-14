@@ -452,3 +452,12 @@ print("The current time is ", datetime.datetime.strftime(todayWithTime, "%H:%M:%
 
 for i in range(6):
     print(f"Random number {i} is {randint(1,10)}")
+
+
+pi = math.pi
+
+radius = float(input("Enter a radius for a circle"))
+area = pi * radius**2
+
+# the %.2f changes given precentage to decimal point
+print(f"A circle with a radius of {radius} is %.2f" % area)
