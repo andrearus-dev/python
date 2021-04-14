@@ -1,5 +1,6 @@
 # variables - like a label for a value
 
+from random import randint
 import datetime
 import math
 import os  # os library
@@ -447,9 +448,7 @@ print("The current date is ", datetime.datetime.strftime(
 print("The current time is ", datetime.datetime.strftime(todayWithTime, "%H:%M:%S"))
 
 
-# built-in modules for operations
+# importing random library
 
-
-nameDirectory = input("What is the name of the diretory? ")
-os.mkdir(nameDirectory)
-print("Directory created")
+for i in range(6):
+    print(f"Random number {i} is {randint(1,10)}")
