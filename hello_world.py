@@ -452,24 +452,3 @@ print("The current time is ", datetime.datetime.strftime(todayWithTime, "%H:%M:%
 
 for i in range(6):
     print(f"Random number {i} is {randint(1,10)}")
-
-
-# pi = math.pi
-
-# radius = float(input("Enter a radius for a circle"))
-# area = pi * radius**2
-
-# # the %.2f changes given precentage to decimal point
-# print(f"A circle with a radius of {radius} is %.2f" % area)
-
-
-# using datetime class module to work out how many days you have left to finish project
-
-currentDate = datetime.date.today()
-
-strDueDate = input("Enter a due date for the project in mm/dd/yyyy format")
-dueDate = datetime.datetime.strptime(strDueDate, "%m/%d/%Y").date()
-
-daysLeft = dueDate - currentDate
-
-print(f"You have {daysLeft} days left to finish your project")
