@@ -445,3 +445,11 @@ print(todayWithoutTime)
 print("The current date is ", datetime.datetime.strftime(
     todayWithoutTime, "%m/%d/%Y"))
 print("The current time is ", datetime.datetime.strftime(todayWithTime, "%H:%M:%S"))
+
+
+# built-in modules for operations
+
+
+nameDirectory = input("What is the name of the diretory? ")
+os.mkdir(nameDirectory)
+print("Directory created")
