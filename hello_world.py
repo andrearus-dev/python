@@ -293,20 +293,8 @@ writeFile.close()
 # write mode 'w' - starts brand new file
 # append mode 'a' - adds to file
 
-if os.path.isfile('log.txt'):  # checks if the file is there
-    writeFile = open('log.txt', 'a')
-else:
-    writeFile = open('log.txt', 'w')
-
-# toLog = input("What do you want to write to the log?")
-# writeFile.write("\n" + toLog)
-# writeFile.close()
 
 # -----most important when working with files - to close them! - use with statement ---
-
-# with open('log.txt', 'w') as writeFile:
-# toLog = input("What do you want to write?")
-# writeFile.write(toLog)
 
 
 # -- reading input from console and making sure it works
@@ -452,3 +440,11 @@ print("The current time is ", datetime.datetime.strftime(todayWithTime, "%H:%M:%
 
 for i in range(6):
     print(f"Random number {i} is {randint(1,10)}")
+
+
+# exercise - to print the name in reverse
+
+firstName = input("What is your first name?")
+lastName = input("What is your last name?")
+
+print(f"{firstName[::-1]} {lastName[::-1]}")
