@@ -25,3 +25,12 @@ def inside(head):
 def moves():
     head = snake[-1].copy()
     head.move(aim)
+
+    # conditions for game
+    if not inside(head) or head in snake:
+        square(head.x, head.y, 'red')
+        update()
+        return
+        # head that hits the boundary line means game over
+
+        # head crosses it's own body - game over
