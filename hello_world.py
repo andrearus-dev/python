@@ -447,4 +447,4 @@ for i in range(6):
 firstName = input("What is your first name?")
 lastName = input("What is your last name?")
 
-print(f"{firstName[::-1]} {lastName[::-1]}")
+print(f"{firstName[::-1]}{lastName[::-1]}")
