@@ -20,3 +20,8 @@ def change(x, y):
 def inside(head):
     # boundaries values - when the snake crosses that boundary the game is over
     return -200 < head.x < 190 and -200 < head.y < 190
+
+
+def moves():
+    head = snake[-1].copy()
+    head.move(aim)
