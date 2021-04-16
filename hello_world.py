@@ -386,36 +386,6 @@ print(div42by(6))
 print(div42by(0))
 print(div42by(12))
 
-# ----------------------------------------
-
-# print("How many dogs do you have? ")
-# numOfDogs = input()
-# try:
-
-#     if int(numOfDogs) >= 4:
-#         print("That is a lot of dogs.")
-#     else:
-#         print("You need more dogs in your life.")
-# except ValueError:
-#     print("You did not enter a number")
-
-# -----------------------------------------
-
-# a = float(input("Enter a number. "))
-# b = float(input("Enter a number you want to divide by"))
-
-# try:
-#     print(f"The answer is {a/b}.")
-# except:
-#     if b == 0:
-#         raise
-#         print("This didn't work")
-# else:
-#     print("You used the division successfully")
-# finally:  # final step in successful code
-#     print("Thank you for playing.")
-
-# math module
 
 pi = math.pi
 upperBound = math.ceil(44.4)
