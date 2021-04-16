@@ -16,17 +16,17 @@ paddle_a.shape("square")
 paddle_a.color("white")
 paddle_a.shapesize(stretch_wid=5, stretch_len=1)
 paddle_a.penup()  # turtles usually draw a line as they're moving but we don't want that
-paddle_a.goto(350, 0)
+paddle_a.goto(-350, 0)
 
 # Paddle B
 
-paddle_a = turtle.Turtle()
-paddle_a.speed(0)
-paddle_a.shape("square")
-paddle_a.color("white")
-paddle_a.shapesize(stretch_wid=5, stretch_len=1)
-paddle_a.penup()  # turtles usually draw a line as they're moving but we don't want that
-paddle_a.goto(-350, 0)
+paddle_b = turtle.Turtle()
+paddle_b.speed(0)
+paddle_b.shape("square")
+paddle_b.color("white")
+paddle_b.shapesize(stretch_wid=5, stretch_len=1)
+paddle_b.penup()  # turtles usually draw a line as they're moving but we don't want that
+paddle_b.goto(350, 0)
 
 # Ball
 
@@ -52,12 +52,27 @@ def paddle_a_down():
     y -= 20
     paddle_a.sety(y)
 
+
+def paddle_b_up():
+    y = paddle_b.ycor()
+    y += 20
+    paddle_b.sety(y)
+
+
+def paddle_b_down():
+    y = paddle_b.ycor()
+    y -= 20
+    paddle_b.sety(y)
+
 # Keyboard binding
 
 
 window.listen()
 window.onkeypress(paddle_a_up, "w")
 window.onkeypress(paddle_a_down, "s")
+window.onkeypress(paddle_b_up, "Up")  # need to be capitalized
+window.onkeypress(paddle_b_down, "Down")
+
 
 # Main game loop
 while True:
