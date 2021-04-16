@@ -38,7 +38,15 @@ ball.shapesize(stretch_wid=1, stretch_len=1)
 ball.penup()
 ball.goto(0, 0)
 
-# Main game loop
+# Function
 
+
+def paddle_a_up():
+    y = paddle_a.ycor()
+    y += 20
+    paddle_a.sety(y)
+
+
+# Main game loop
 while True:
     window.update()
