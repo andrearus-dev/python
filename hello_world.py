@@ -453,8 +453,8 @@ print(f"{firstName[::-1]}{lastName[::-1]}")
 # function for reversing name
 
 def reverseName(first, last):
-    return first[::-1] and last[::-1]
+    return first[::-1], last[::-1]
 
 
-nameReversed = reverseName('Andrea', 'Rus')
+nameReversed = reverseName('Andrea Rus')
 print(nameReversed)
