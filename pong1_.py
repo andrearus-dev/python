@@ -91,3 +91,15 @@ while True:
     if ball.ycor() < -290:
         ball.sety(-290)
         bell.dy *= -1
+
+    if ball.ycor() < 390:
+        ball.sety(0, 0)
+        bell.dy *= -1
+
+    if ball.ycor() < -390:
+        ball.sety(0, 0)
+        bell.dy *= -1
+
+# Paddle and ball collisions
+
+if ball.xcor() > 340 and ball.xcor() < 350 and (ball.ycor() < paddle_b.ycor() + 40 and ball.ycor() > paddle_b.ycor() - 40):
