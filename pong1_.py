@@ -87,3 +87,7 @@ while True:
     if ball.ycor() > 290:
         ball.sety(290)
         ball.dy *= -1
+
+    if ball.ycor() < -290:
+        ball.sety(-290)
+        bell.dy *= -1
