@@ -22,4 +22,17 @@ class cube(object):
 
 
 class snake(object):
-    def _init_(self, color, pos)
+    def _init_(self, color, pos):
+        pass
+
+    def move(self):
+        pass
+
+    def reset(self, pos):
+        pass
+
+    def addCube(self):
+        pass
+
+    def draw(self, surface):
+        pass
