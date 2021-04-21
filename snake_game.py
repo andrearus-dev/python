@@ -40,3 +40,19 @@ class snake(object):
 
 def drawGrid(w, rows, surface):
     pass
+
+
+def redrawWindow(surface):
+    pass
+
+
+def randomSnack(rows, items):
+    pass
+
+
+def message_box(subject, content):
+    pass
+
+
+def main():
+    pass
