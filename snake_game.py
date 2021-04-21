@@ -6,6 +6,7 @@ from tkinter import messagebox
 
 
 # two objects
+# first class
 
 class cube(object):
     rows = 0
@@ -19,6 +20,8 @@ class cube(object):
 
     def draw(self, surface, eyes=False):
         pass
+
+# second class
 
 
 class snake(object):
@@ -59,4 +62,9 @@ def main():
     height = 500
     rows = 20
     win = pygame.display.set_mode((width, height))
+    s = snake((250, 0, 0), (10, 10))  # colour and position
+    flag = True
+    while flag:
+        pygame.time.delay(50)
+        clock.tick(10)
     pass
