@@ -19,3 +19,7 @@ class cube(object):
 
     def draw(self, surface, eyes=False):
         pass
+
+
+class snake(object):
+    def _init_(self, color, pos)
