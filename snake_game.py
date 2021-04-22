@@ -64,6 +64,9 @@ def main():
     win = pygame.display.set_mode((width, height))
     s = snake((250, 0, 0), (10, 10))  # colour and position
     flag = True
+
+    clock = pygame.time.Clock()
+
     while flag:
         pygame.time.delay(50)
         clock.tick(10)
