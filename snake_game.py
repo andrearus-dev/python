@@ -70,4 +70,5 @@ def main():
     while flag:
         pygame.time.delay(50)
         clock.tick(10)
+        redrawWindow(win)
     pass
