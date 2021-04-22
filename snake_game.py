@@ -46,6 +46,8 @@ def drawGrid(w, rows, surface):
 
 
 def redrawWindow(surface):
+    drawGrid()
+    pygame.display.update()
     pass
 
 
