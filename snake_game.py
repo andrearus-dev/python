@@ -46,8 +46,8 @@ def drawGrid(w, rows, surface):
 
 
 def redrawWindow(surface):
-    win.fill((0, 0, 0))
-    drawGrid()
+    global rows, width
+    drawGrid(width, row, surface)
     pygame.display.update()
     pass
 
@@ -61,10 +61,11 @@ def message_box(subject, content):
 
 
 def main():
+    global width, rows
     width = 500
     height = 500
     rows = 20
-    win = pygame.display.set_mode((width, height))
+    win = pygame.display.set_mode((width, width))
     s = snake((250, 0, 0), (10, 10))  # colour and position
     flag = True
 
