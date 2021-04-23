@@ -46,6 +46,7 @@ def drawGrid(w, rows, surface):
 
 
 def redrawWindow(surface):
+    win.fill((0, 0, 0))
     drawGrid()
     pygame.display.update()
     pass
@@ -71,6 +72,6 @@ def main():
 
     while flag:
         pygame.time.delay(50)
-        clock.tick(10)
+        clock.tick(10)  # speed
         redrawWindow(win)
     pass
