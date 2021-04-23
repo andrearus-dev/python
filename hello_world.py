@@ -429,6 +429,11 @@ for i in range(6):
 
 colours = ["pink", "red", "blue", "purple"]
 
+if "print" in colours:
+    print("The colour pink exists in the list")
+
+else:
+    print("The colour you mentioned does not exist in the list")
 
 # convert string to a list of characters
 
