@@ -420,17 +420,19 @@ for i in range(6):
 # print(f"{firstName[::-1]}{lastName[::-1]}")
 
 
-# calculate dog years
+# if-else statements exercise
 
-human_age = int(input("Enter dogs' age in human years:"))
+# change order of precedence of operators in an expression
 
-if human_age < 0:
-    print("Age must be a positive number")
-    exit()
 
-if human_age <= 2:
-    dog_age = int(human_age * 10.5)
+# summarize membership operators in python
 
-else:
-    dog_age = 21 + (human_age - 2)*4
-print("The dogs age is ", dog_age)
+colours = ["pink", "red", "blue", "purple"]
+
+
+# convert string to a list of characters
+
+convert_string = "hello"
+new_list = list(convert_string)
+
+print(new_list)
