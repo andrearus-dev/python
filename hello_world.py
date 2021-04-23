@@ -414,17 +414,23 @@ for i in range(6):
 
 # exercise - to print the name in reverse
 
-firstName = input("What is your first name?")
-lastName = input("What is your last name?")
+# firstName = input("What is your first name?")
+# lastName = input("What is your last name?")
 
-print(f"{firstName[::-1]}{lastName[::-1]}")
-
-
-# function for reversing name
-
-def reverseName(first, last):
-    return first[::-1], last[::-1]
+# print(f"{firstName[::-1]}{lastName[::-1]}")
 
 
-nameReversed = reverseName('Andrea Rus')
-print(nameReversed)
+# calculate dog years
+
+human_age = int(input("Enter dogs' age in human years:"))
+
+if human_age < 0:
+    print("Age must be a positive number")
+    exit()
+
+if human_age <= 2:
+    dog_age = int(human_age * 10.5)
+
+else:
+    dog_age = 21 + (human_age - 2)*4
+print("The dogs age is ", dog_age)
