@@ -42,6 +42,18 @@ class snake(object):
 
 
 def drawGrid(w, rows, surface):
+    sizeBtwn = w // rows
+
+    x = 0
+    y = 0
+    for l in range(rows):
+        x = x + sizeBtwn
+        y = y + sizeBtwn
+
+        pygame.draw.line(surface, (255, 255, 255), (x, 0),
+                         (x, w))  # start and end position
+        # going to draw lines every for loop
+        pygame.draw.line(surface, (255, 255, 255), (0, y), (w, y))
     pass
 
 
