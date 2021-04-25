@@ -25,8 +25,12 @@ class cube(object):
 
 
 class snake(object):
+    body = []
+    turns = {}
+
     def _init_(self, color, pos):
-        pass
+        self.color = color
+        self.head = cube(pos)  # cube at the gives position
 
     def move(self):
         pass
