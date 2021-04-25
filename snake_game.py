@@ -31,6 +31,7 @@ class snake(object):
     def _init_(self, color, pos):
         self.color = color
         self.head = cube(pos)  # cube at the gives position
+        self.body.append(self.head)
 
     def move(self):
         pass
