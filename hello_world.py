@@ -422,14 +422,11 @@ for i in range(6):
 
 # if-else statements exercise
 
-# change order of precedence of operators in an expression
-
-
 # summarize membership operators in python
 
 colours = ["pink", "red", "blue", "purple"]
 
-if "print" in colours:
+if "grey" in colours:
     print("The colour pink exists in the list")
 
 else:
