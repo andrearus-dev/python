@@ -42,6 +42,15 @@ class snake(object):
 
             keys = pygame.keys.get_pressed()
 
+            for key in keys:
+                if keys[pygame.K_LEFT]:
+                 # where i left off
+                if keys[pygame.K_RIGHT]:
+
+                if keys[pygame.K_UP]:
+
+                if keys[pygame.K_DOWN]:
+
     def reset(self, pos):
         pass
 
