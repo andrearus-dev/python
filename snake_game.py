@@ -36,7 +36,9 @@ class snake(object):
         self.dirny = 1  # both keep track what direction we're moving in
 
     def move(self):
-        pass
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit()
 
     def reset(self, pos):
         pass
