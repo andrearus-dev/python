@@ -40,6 +40,8 @@ class snake(object):
             if event.type == pygame.QUIT:
                 pygame.quit()
 
+            keys = pygame.keys.get_pressed()
+
     def reset(self, pos):
         pass
 
