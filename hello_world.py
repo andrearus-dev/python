@@ -280,20 +280,6 @@ print("Good luck with your goals.")
 
 # conditional compound operators - and, or, not
 
-# ---- reading, opening, closing files ----
-
-
-# ----- WRITING a file --------
-
-writeFile = open('log.txt', 'w')
-#toLog = input("What do you want to write to the file")
-# writeFile.write(toLog)
-writeFile.close()
-
-# write mode 'w' - starts brand new file
-# append mode 'a' - adds to file
-
-
 # -----most important when working with files - to close them! - use with statement ---
 
 
