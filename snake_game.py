@@ -32,6 +32,8 @@ class snake(object):
         self.color = color
         self.head = cube(pos)  # cube at the gives position
         self.body.append(self.head)
+        self.dirnx = 0  # direction for x
+        self.dirny = 1  # both keep track what direction we're moving in
 
     def move(self):
         pass
