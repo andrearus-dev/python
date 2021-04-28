@@ -47,11 +47,21 @@ class snake(object):
                     self.dirx = -1
                     self.dirny = 0
                     self.turns[self.head.pos[:]] = [self.dirnx, self.dirny]
+
                 if keys[pygame.K_RIGHT]:
+                    self.dirx = 1
+                    self.dirny = 0
+                    self.turns[self.head.pos[:]] = [self.dirnx, self.dirny]
 
                 if keys[pygame.K_UP]:
+                    self.dirx = 0
+                    self.dirny = -1
+                    self.turns[self.head.pos[:]] = [self.dirnx, self.dirny]
 
                 if keys[pygame.K_DOWN]:
+                    self.dirx = 0
+                    self.dirny = 1
+                    self.turns[self.head.pos[:]] = [self.dirnx, self.dirny]
 
     def reset(self, pos):
         pass
