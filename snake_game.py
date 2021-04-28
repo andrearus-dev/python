@@ -44,7 +44,9 @@ class snake(object):
 
             for key in keys:
                 if keys[pygame.K_LEFT]:
-                 # where i left off
+                    self.dirx = -1
+                    self.dirny = 0
+                    self.turns[self.head.pos[:]] = [self.dirnx, self.dirny]
                 if keys[pygame.K_RIGHT]:
 
                 if keys[pygame.K_UP]:
