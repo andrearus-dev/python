@@ -63,6 +63,10 @@ class snake(object):
                     self.dirny = 1
                     self.turns[self.head.pos[:]] = [self.dirnx, self.dirny]
 
+            for i, c in enumerate(self.body):
+                p = c.pos[:]  # the [:] makes a copy
+                if p in self.turns:
+
     def reset(self, pos):
         pass
 
