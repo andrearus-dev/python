@@ -1,9 +1,11 @@
 # libraries
 
 from newspaper import Article
-from textblob import TextBlob
+from textblob import TextBlob  # for sentiment analysis
 import nltk
 import tkinter as tk
+
+nltk.download('punkt')
 
 # get summary of article = pass in url
 
@@ -15,3 +17,10 @@ url = 'https://techcrunch.com/2021/05/05/cymulate-nabs-45m-to-test-and-improve-c
 article = Article(url)
 article.download()  # download the data
 article.parse()  # dissects article in the parts that it needs
+
+article.nlp()
+
+print(f'Title: {article.title}')
+print(f'Author: {article.author}')
+print(f'Publication Date: {article.publish_date}')
+print(f'Summary: {article.summary}')
