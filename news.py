@@ -25,10 +25,19 @@ print(f'Author: {article.authors}')
 print(f'Publication Date: {article.publish_date}')
 print(f'Summary: {article.summary}')
 
+
 # Sentiment analysis
 
 analysis = TextBlob(article.text)
 print(analysis.polarity)
 print(f'Sentiment: {"positive" if analysis.polarity > 0 else "negative" if analysis.polarity < 0 else "neutral"}')
 
+
 # Building the graphical user interface
+
+# create tkinter window screen
+root = tk.Tk()
+root.title("News Summarizer")
+root.geometry('1200x600')
+
+root.mainloop()
