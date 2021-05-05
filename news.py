@@ -42,6 +42,7 @@ root.geometry('1200x600')
 
 # create individual buttons/ labels/ textboxes
 
+# title
 tlabel = tk.Label(root, text="Title")
 tlabel.pack()  # to see it on the screen
 
@@ -49,5 +50,41 @@ title = tk.Text(root, height=1, width=140)
 # state disabled so the user can't go in and change it
 title.config(state='disabled', bg='#dddddd')
 title.pack()
+
+# author
+alabel = tk.Label(root, text="Author")
+alabel.pack()
+
+author = tk.Text(root, height=1, width=140)
+author.config(state='disabled', bg='#dddddd')
+author.pack()
+
+# publication
+plabel = tk.Label(root, text="Publishing Date")
+plabel.pack()
+
+publication = tk.Text(root, height=1, width=140)
+publication.config(state='disabled', bg='#dddddd')
+publication.pack()
+
+# textbox - summary
+slabel = tk.Label(root, text="Summary")
+slabel.pack()
+
+summary = tk.Text(root, height=20, width=140)
+summary.config(state='disabled', bg='#dddddd')
+summary .pack()
+
+# URL
+ulabel = tk.Label(root, text="Sentiment Analysis")
+ulabel.pack()
+
+utext = tk.Text(root, height=1, width=140)
+utext.pack()
+
+# Button
+btn = tk.Button(root, text="Summarize")
+btn.pack()
+
 
 root.mainloop()
