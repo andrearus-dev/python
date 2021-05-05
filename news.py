@@ -29,6 +29,6 @@ print(f'Summary: {article.summary}')
 
 analysis = TextBlob(article.text)
 print(analysis.polarity)
-print(f'Sentiment: {'positive' if analysis.polarity > 0 else 'negative' if analysis.polarity < 0 else 'neutral'}')
+print(f'Sentiment: {"positive" if analysis.polarity > 0 else "negative" if analysis.polarity < 0 else "neutral"}')
 
 # Building the graphical user interface
