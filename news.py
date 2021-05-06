@@ -56,7 +56,6 @@ def summarize():
 
     # Building the graphical user interface
 
-
     # create tkinter window screen
 root = tk.Tk()
 root.title("News Summarizer")
@@ -116,6 +115,5 @@ utext.pack()
 # refer to the function, not call it
 btn = tk.Button(root, text="Summarize", command=summarize)
 btn.pack()
-
 
 root.mainloop()
