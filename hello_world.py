@@ -449,3 +449,10 @@ for cars_list in car_list:
         flattened_list.append(car)
 
 print(flattened_list)
+
+# range function
+
+leap_year_range = range(2000, 2100, 4)
+leap_year_list = list(leap_year_range)
+
+print(leap_year_list)
