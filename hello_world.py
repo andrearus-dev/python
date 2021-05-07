@@ -458,16 +458,9 @@ leap_year_list = list(leap_year_range)
 print(leap_year_list)
 
 
-# break and continue
+# list comprehension
 
-list_of_numbers = [124, 173, 231, 301, 315]
+original_list_num = [2, 3, 6, 7, 8, 11, 12, 13, 17, 18]
+cube_list = [x ** 3 for x in original_list_num if x % 3 == 0]
 
-for i in list_of_numbers:
-
-    if (i == 315):
-        break
-
-    if (i % 7 == 0):
-        continue
-
-    print(i, end= ` `)
+print(cube_list)
