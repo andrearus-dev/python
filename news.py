@@ -56,6 +56,7 @@ def summarize():
 
     # Building the graphical user interface
 
+
     # create tkinter window screen
 root = tk.Tk()
 root.title("News Summarizer")
@@ -94,7 +95,7 @@ slabel.pack()
 
 summary = tk.Text(root, height=20, width=140)
 summary.config(state='disabled', bg='#dddddd')
-summary .pack()
+summary.pack()
 
 # Sentiment Analysis
 selabel = tk.Label(root, text="Summary")

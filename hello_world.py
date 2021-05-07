@@ -424,3 +424,17 @@ convert_string = "hello"
 new_list = list(convert_string)
 
 print(new_list)
+
+
+# basic exercise - for loops
+
+# print the cubes of all the elements in a list using a for loop
+
+original_list = [1, 2, 3, 4, 5, 6]
+cubes_list = []
+
+for i in original_list:
+
+    cubes_list.append(i ** 3)  # eg 2 x 2 x 2
+
+print(cubes_list)
