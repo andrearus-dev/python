@@ -438,3 +438,14 @@ for i in original_list:
     cubes_list.append(i ** 3)  # eg 2 x 2 x 2
 
 print(cubes_list)
+
+# combine lists into new list
+car_list = [['Volts', 'BMW', 'Ferrari'], ['Honda' ' Toyota', 'Mazda']]
+flattened_list = []
+
+for cars_list in car_list:
+
+    for car in cars_list:
+        flattened_list.append(car)
+
+print(flattened_list)
