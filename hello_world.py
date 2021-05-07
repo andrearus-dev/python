@@ -456,3 +456,18 @@ leap_year_range = range(2000, 2100, 4)
 leap_year_list = list(leap_year_range)
 
 print(leap_year_list)
+
+
+# break and continue
+
+list_of_numbers = [124, 173, 231, 301, 315]
+
+for i in list_of_numbers:
+
+    if (i == 315):
+        break
+
+    if (i % 7 == 0):
+        continue
+
+    print(i, end= ` `)
