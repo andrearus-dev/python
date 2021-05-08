@@ -464,3 +464,17 @@ original_list_num = [2, 3, 6, 7, 8, 11, 12, 13, 17, 18]
 cube_list = [x ** 3 for x in original_list_num if x % 3 == 0]
 
 print(cube_list)
+
+# while loop
+
+response = ""
+
+while True:
+
+    response = input("What is the capital of Egypt?")
+
+    if response == "quit":
+        print("The correct response is Cairo")
+        break
+
+    if response.upper() == "CAIRO":
