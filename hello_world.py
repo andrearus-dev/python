@@ -465,20 +465,6 @@ cube_list = [x ** 3 for x in original_list_num if x % 3 == 0]
 
 print(cube_list)
 
-# while loop
+# while loop - loop until condition is satisfied - used when number of iterations is not known upfront
 
-response = ""
-
-while True:
-
-    response = input("What is the capital of Egypt?")
-
-    if response == "quit":
-        print("The correct response is Cairo")
-        break
-
-    if response.upper() == "CAIRO":
-        print("That is the correct answer")
-        break
-    else:
-        print("That is not the correct answer")
+# for loop - iterated over sequence of values - known length - can be defined with range function
