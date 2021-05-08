@@ -478,3 +478,7 @@ while True:
         break
 
     if response.upper() == "CAIRO":
+        print("That is the correct answer")
+        break
+    else:
+        print("That is not the correct answer")
