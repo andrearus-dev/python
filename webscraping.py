@@ -39,6 +39,12 @@ soup = BeautifulSoup(html_doc, 'html.parser')
 # data parsing - takes string of data and converts it to a diff type of data - eg html to more readable type of data
 
 
-# find method
+# find method only looks at the first thing it finds - can also use findAll
 
-el = soup.find('div')  # find method only looks at the first thing it sees
+# el = soup.find(class_='items')  # can also look at id and attributes
+
+# select method
+el = soup.select('.item')[0]
+print(el)
+
+# get_text()
