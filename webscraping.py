@@ -40,3 +40,5 @@ soup = BeautifulSoup(html_doc, 'html.parser')
 
 
 # find method
+
+el = soup.find('div')  # find method only looks at the first thing it sees
