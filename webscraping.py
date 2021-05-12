@@ -33,3 +33,10 @@ html_doc = """
     </body >
 </html >
 """
+
+# first parameter - what to scrape
+soup = BeautifulSoup(html_doc, 'html.parser')
+# data parsing - takes string of data and converts it to a diff type of data - eg html to more readable type of data
+
+
+# find method
