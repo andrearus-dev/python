@@ -488,3 +488,11 @@ print(round(pinches_salt))
 
 number = 123.67856
 print(round(number, 4))
+
+
+# ** is the expond operator - to the power of
+
+
+# .ceil() - rounds number up to nearest integer
+# .floor() - rounds it down to nearest integer
+# The strftime() method returns a string representing date and time using date, time or datetime object.
