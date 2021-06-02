@@ -470,7 +470,7 @@ print(cube_list)
 # for loop - iterated over sequence of values - known length - can be defined with range function
 
 
-# math related built in functions
+# MATH related built in functions
 
 # min() - returns smallest item in iterable or smallest
 # of two or more arguments
@@ -479,3 +479,12 @@ player1 = 10
 player2 = 4
 
 print(min(player1, player2))
+print(min('Amy', 'Aaron', 'bob'))  # letters stored as numbers
+
+# round()
+
+pinches_salt = 2.3
+print(round(pinches_salt))
+
+number = 123.67856
+print(round(number, 4))
