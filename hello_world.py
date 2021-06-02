@@ -468,3 +468,14 @@ print(cube_list)
 # while loop - loop until condition is satisfied - used when number of iterations is not known upfront
 
 # for loop - iterated over sequence of values - known length - can be defined with range function
+
+
+# math related built in functions
+
+# min() - returns smallest item in iterable or smallest
+# of two or more arguments
+
+player1 = 10
+player2 = 4
+
+print(min(player1, player2))
