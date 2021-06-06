@@ -507,3 +507,10 @@ class Person:
         self.age = age
 
     def myfunc(self):
+        print("Hello, my name is " + self.name)
+
+
+p1 = Person("Andrea", 26)
+p1.myfunc()
+
+# self parameter - reference to current instance of the class
