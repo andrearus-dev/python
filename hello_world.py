@@ -514,3 +514,11 @@ p1 = Person("Andrea", 26)
 p1.myfunc()
 
 # self parameter - reference to current instance of the class
+
+
+# Lambada
+
+def x(a): return a + 10
+
+
+print(x(5))
