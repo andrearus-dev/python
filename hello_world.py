@@ -516,9 +516,15 @@ p1.myfunc()
 # self parameter - reference to current instance of the class
 
 
-# Lambada
+# Lambada - can take any amount of arguments
 
 def x(a): return a + 10
 
 
 print(x(5))
+
+
+def x(a, b): return a * b
+
+
+print(x(5, 6))
