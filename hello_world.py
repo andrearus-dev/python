@@ -528,3 +528,15 @@ def x(a, b): return a * b
 
 
 print(x(5, 6))
+
+
+# creating class and object in python
+
+class Parrot:
+    # class attribute
+    species = "bird"
+
+    # instance attribute
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
