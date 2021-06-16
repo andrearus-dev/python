@@ -540,3 +540,9 @@ class Parrot:
     def __init__(self, name, age):
         self.name = name
         self.age = age
+
+# istantiate the Parrot class
+
+
+blu = Parrot("Blu", 10)
+woo = Parrot("Woo", 15)
