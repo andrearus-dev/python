@@ -6,4 +6,13 @@ import random
 random_num = random.randint(0, 100)
 
 people = random_num
-print(people)
+
+head = 1*people
+shoulders = 2*people
+knees = 2*people
+toes = 10*people
+
+print(head)
+print(shoulders)
+print(knees)
+print(toes)
