@@ -16,3 +16,21 @@ print(head)
 print(shoulders)
 print(knees)
 print(toes)
+
+
+def make_bricks(small, big, goal):
+
+    # fail #1 = not enough bricks
+    if (goal > big*5 + small):
+        return False
+# fail #2 not enough small bricks
+    if (goal % 5 > small):
+        return False
+
+    else:
+        return True
+
+
+print(make_bricks(3, 1, 8))
+print(make_bricks(3, 1, 9))
+print(make_bricks(3, 2, 10))
