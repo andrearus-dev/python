@@ -34,3 +34,36 @@ def make_bricks(small, big, goal):
 print(make_bricks(3, 1, 8))
 print(make_bricks(3, 1, 9))
 print(make_bricks(3, 2, 10))
+
+print("End of this exercise. Moving on to the next")
+
+
+def array123(nums):
+
+    for num in nums:
+        if nums == 1 and nums == 2 and nums == 3:
+            return True
+        else:
+            return False
+
+
+print(array123([1, 1, 2, 3, 1]))
+print(array123([1, 1, 2, 4, 1]))
+print(array123([1, 1, 2, 1, 2, 3]))
+
+print("End of this exercise. Moving on to the next")
+
+
+# Given an array of ints, return True if the sequence of numbers 1, 2, 3 appears in the array somewhere.
+
+def array123(nums):
+    # Note: iterate with length-2, so can use i+1 and i+2 in the loop
+    for i in range(len(nums)-2):
+        if nums[i] == 1 and nums[i+1] == 2 and nums[i+2] == 3:
+            return True
+    return False
+
+
+array123([1, 1, 2, 3, 1])
+array123([1, 1, 2, 4, 1])
+array123([1, 1, 2, 1, 2, 3])
