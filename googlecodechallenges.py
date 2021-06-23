@@ -78,7 +78,7 @@ def FirstFactorial(num):
         return 1
 
     else:
-        return num*(FirstFactorial(int((num-1))))
+        return num*(FirstFactorial((num-1)))
 
 
 print(FirstFactorial(input()))
